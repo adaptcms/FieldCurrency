@@ -1,0 +1,41 @@
+{
+  "name": "adaptcms/fieldcurrency",
+  "description": "Adaptcms FieldCurrency",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Charles Page",
+      "email": "charliepage88@gmail.com",
+      "homepage": "https://www.adaptcms.com/packages/adaptcms/fieldcurrency"
+    }
+  ],
+  "homepage": "https://github.com/adaptcms/fieldcurrency",
+  "keywords": [
+    "Laravel",
+    "Adaptcms",
+    "FieldCurrency"
+  ],
+  "require": {
+    "illuminate/support": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Adaptcms\\FieldCurrency\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Adaptcms\\FieldCurrency\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Adaptcms\\FieldCurrency\\FieldCurrencyServiceProvider"
+      ],
+      "aliases": {
+        "FieldCurrency": "Adaptcms\\FieldCurrency\\Facades\\FieldCurrency"
+      }
+    }
+  }
+}
