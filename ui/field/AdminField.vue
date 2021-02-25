@@ -30,7 +30,7 @@ export default {
   watch: {
     value (newVal, oldVal) {
       if (newVal !== oldVal) {
-        this.selected = newVal
+        this.selected = parseFloat(newVal)
       }
     },
 
