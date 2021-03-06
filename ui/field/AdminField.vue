@@ -1,5 +1,6 @@
 <template>
   <currency-input
+    v-if="field.meta && field.meta.currency"
     :id="`form-${field.column_name}`"
     class="text-base py-3 px-3 shadow-sm block mt-1 border w-full"
     v-model="selected"
@@ -55,6 +56,13 @@ export default {
   mounted () {
     if (!this.selected) {
       this.selected = parseFloat(this.value)
+    }
+
+    if (!this.field.meta) {
+      this.$set(this.field, 'meta', {
+        currency: 'USD',
+        locale: 'en-US'
+      })
     }
   }
 }
