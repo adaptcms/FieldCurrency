@@ -1,5 +1,6 @@
 <template>
   <currency-input
+    v-if="field.meta && field.meta.currency"
     v-model="number"
     :distraction-free="false"
     :locale="field.meta.locale"
@@ -28,6 +29,15 @@ export default {
   computed: {
     number () {
       return parseFloat(this.value)
+    }
+  },
+
+  mounted () {
+    if (!this.field.meta) {
+      this.$set(this.field, 'meta', {
+        currency: 'USD',
+        locale: 'en-US'
+      })
     }
   }
 }
