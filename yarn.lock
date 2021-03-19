@@ -2,7 +2,14 @@
 # yarn lockfile v1
 
 
-vue-currency-input@^1.22.6:
-  version "1.22.6"
-  resolved "https://registry.yarnpkg.com/vue-currency-input/-/vue-currency-input-1.22.6.tgz#1fed0dabb8a46a5537daca9371942f3d4f3a08fc"
-  integrity sha512-BUq8aysiZ1pdRyyWyIgxYz4+PBQwgVeAqxNr8ZOGaudA8YqEv2S5Plze0LjI/pbinX4+ma1sIIzStXZPxMy0/Q==
+vue-currency-input@^2.0.0-rc.1:
+  version "2.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/vue-currency-input/-/vue-currency-input-2.0.0-rc.1.tgz#0dc7b39a56f8ddc115d54be4c1876cba6212fc0b"
+  integrity sha512-MTXK3AyvcJog1a2uKATQM30B0GK1dqX5Nt6IHiFiibF9Q+Az296kLJUkypX4rhuXfRkZvlzg7UmSqdQALevOIw==
+  dependencies:
+    vue-demi "^0.6.0"
+
+vue-demi@^0.6.0:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.6.2.tgz#ed9633eaa69b7409cc6e8328e8a6c3d31ab39319"
+  integrity sha512-4KfwxbqsZcDz7UryD11oHa6FLK9Gzx4MIwAEcP37IbUdXuF6DHg2w9L5Zv5t+FNqsuAjEQ2NnGVIZ3u71y435Q==

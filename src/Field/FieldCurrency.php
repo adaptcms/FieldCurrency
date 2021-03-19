@@ -43,4 +43,16 @@ class FieldCurrency extends FieldType
   {
     return '$table->decimal(":columnName", 5, 2)->default(0.00);';
   }
+
+  /**
+  * Get Value
+  *
+  * @param mixed $value
+  *
+  * @return mixed
+  */
+  public function getValue($value)
+  {
+    return (float) $value;
+  }
 }
